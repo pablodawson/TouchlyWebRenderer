@@ -1,0 +1,3 @@
+boto3
+banana_dev
+gradio
