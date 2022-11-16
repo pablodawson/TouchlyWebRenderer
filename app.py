@@ -50,8 +50,9 @@ inputs.append(gr.Textbox(label="Email to recieve converted video (optional)"))
 ui = gr.Interface(
     fn=pipeline,
     inputs=inputs,
-    outputs=[gr.Video(label="Output video"), gr.Text(label="Result")],
-    server_name="0.0.0.0"
+    outputs=[gr.Video(label="Output video"), gr.Text(label="Result")], 
+    server_name="0.0.0.0",
+    share=False
 )
 
 ui.launch()
