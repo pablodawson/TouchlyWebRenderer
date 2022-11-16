@@ -51,8 +51,6 @@ ui = gr.Interface(
     fn=pipeline,
     inputs=inputs,
     outputs=[gr.Video(label="Output video"), gr.Text(label="Result")], 
-    server_name="0.0.0.0",
-    share=False
 )
 
-ui.launch()
+ui.launch(server_name="0.0.0.0")
